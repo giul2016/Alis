@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/products"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:text="Productos"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_alignRight="@+id/button2"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="22dp"
+            android:ems="10" 
+            android:hint="Buscar Producto"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="31dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_mas2"
+            android:onClick="category"
+            android:text=" Categoría"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_mas2"
+            android:onClick="lanzar"
+            android:text=" Producto"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="206dp"
+        android:layout_weight="0.24"
+        android:cacheColorHint="@null"
+        android:choiceMode="multipleChoice"
+        android:fadingEdge="none" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La lista está vacía."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    
+
+</LinearLayout>

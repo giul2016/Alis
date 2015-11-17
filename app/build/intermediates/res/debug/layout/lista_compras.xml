@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Listas de Compras"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emptyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/list"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="No hay listas disponibles"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="20dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_mas2"
+        android:onClick="agregar"
+        android:text=" Lista"
+       android:background="@android:color/transparent"
+        android:textStyle="bold" />
+
+</RelativeLayout><!-- From: file:/C:/Users/Gabriel/AndroidstudioProjects/Alis%202.0/app/src/main/res/layout/lista_compras.xml -->

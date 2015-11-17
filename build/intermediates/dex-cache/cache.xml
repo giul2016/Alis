@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\adt-bundle-windows-x86_64-20130729\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\Gabriel\AndroidstudioProjects\Alis 2.0\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-0b320d3f928002a0f8ae1bf72c2803db1533e9b6.jar" />
+    </item>
+
+</items>

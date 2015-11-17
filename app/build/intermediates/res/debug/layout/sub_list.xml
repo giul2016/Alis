@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:text="Nombre de la lista"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="56dp"
+     android:gravity="center"
+     android:orientation="horizontal" >
+
+     
+     <Button
+         android:id="@+id/butt"
+         android:layout_toLeftOf="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:onClick="borrar"
+          android:drawableLeft="@drawable/ic_delete"
+           android:background="@android:color/transparent"
+       
+         />
+     
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         
+         android:background="@android:color/transparent"
+        
+         android:drawableLeft="@drawable/ic_mas2"
+         android:onClick="lanzar"
+         android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/Button02"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+     
+       android:layout_toRightOf="@+id/button1"
+         android:layout_marginRight="33dp"
+         android:background="@android:color/transparent"
+         android:drawableLeft="@drawable/ic_send3"
+         android:onClick="enviar"
+         android:textStyle="bold" />
+
+ </RelativeLayout>
+    <TextView
+        android:id="@+id/emptyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No hay productos disponibles"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/emptyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No hay listas disponibles"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_weight="1.13" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.08"
+            android:text="Total:"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="$0.00" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Gabriel/AndroidstudioProjects/Alis%202.0/app/src/main/res/layout/sub_list.xml -->

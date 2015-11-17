@@ -1,0 +1,183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<RelativeLayout
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="442dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignRight="@+id/planets_spinner"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:inputType="textCapWords" />
+
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Descripción del Producto"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/planets_spinner"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="16dp"
+        android:text="@string/categoria" />
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/planets_spinner"
+        android:layout_below="@+id/planets_spinner"
+        android:layout_marginTop="16dp"
+        android:text="@string/precio" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignLeft="@+id/TextView01"
+        android:ems="5"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/EditText03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditText02"
+        android:layout_alignBottom="@+id/EditText02"
+        android:layout_alignLeft="@+id/EditText01"
+        android:ems="5"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_toLeftOf="@+id/editText3"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText02"
+        android:layout_toLeftOf="@+id/EditText02"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EditText04"
+        android:layout_toLeftOf="@+id/EditText04"
+        android:text="3" />
+
+    <EditText
+        android:id="@+id/EditText04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/EditText02"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText3"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/EditText05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditText03"
+        android:layout_below="@+id/EditText03"
+        android:ems="5"
+        android:inputType="textCapWords"/>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/editText3"
+        android:text="Supermercado" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_marginRight="16dp"
+        android:onClick="Eliminar"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:onClick="aceptar"
+        android:text="@string/aceptar" />
+
+</RelativeLayout>
+</ScrollView>

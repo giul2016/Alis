@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="422dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:text="Registro"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtUserName"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="16dp"
+            android:text="Nombre de usuario:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtUserName"
+            android:layout_below="@+id/txtUserName"
+            android:layout_marginTop="20dp"
+            android:text="Correo electrónico:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginTop="14dp"
+            android:text="Verificar correo electrónico:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/txtVEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:ems="10"
+            android:inputType="textEmailAddress" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtVEmail"
+            android:layout_centerHorizontal="true"
+            android:text="Si desea cambiar algun dato, edite el campo correspondiente y luego presione el boton 'Guardar Cambios'." />
+
+        <Button
+            android:id="@+id/btnNext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNext"
+            android:layout_centerHorizontal="true"
+            android:onClick="verificar"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="Guardar Cambios" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:onClick="verificar"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="Registrarse" />
+    </RelativeLayout>
+
+</ScrollView><!-- From: file:/C:/Users/Gabriel/AndroidstudioProjects/Alis%202.0/app/src/main/res/layout/registro.xml -->

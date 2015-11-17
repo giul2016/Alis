@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip"  >
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cate"
+        android:layout_alignLeft="@+id/cate"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="Example application"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/checkBox1"
+        android:text="$0.00" />
+
+    <TextView
+        android:id="@+id/cate"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description"
+        android:textSize="12sp" />
+ 
+</RelativeLayout>
+
+<!-- From: file:/C:/Users/Gabriel/AndroidstudioProjects/Alis%202.0/app/src/main/res/layout/produ_list.xml -->

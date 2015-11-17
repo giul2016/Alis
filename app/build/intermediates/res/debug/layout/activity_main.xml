@@ -1,0 +1,66 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <Button
+            android:id="@+id/textView1"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="75sp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+
+            android:onClick="lista_c"
+            android:text="Sub Lista"/>
+
+        <Button
+            android:id="@+id/textView3"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="75sp"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="14dp"
+
+            android:onClick="config"
+            android:text="Configuración"/>
+
+        <Button
+            android:id="@+id/textView4"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="75sp"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="17dp"
+
+            android:onClick="contactenos"
+            android:text="Contactenos"/>
+
+        <Button
+            android:id="@+id/textView2"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="75sp"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="58dp"
+            android:onClick="lanzar"
+            android:text="Lista General"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_alignEnd="@+id/textView1"/>
+    </RelativeLayout>
+
+</ScrollView><!-- From: file:/C:/Users/Gabriel/AndroidstudioProjects/Alis%202.0/app/src/main/res/layout/activity_main.xml -->

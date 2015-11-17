@@ -1,0 +1,88 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Risky Project Location:
+-----------------------
+The tools *should* handle project locations in any directory. However,
+due to bugs, placing projects in directories containing spaces in the
+path, or characters like ", ' and &, have had issues. We're working to
+eliminate these bugs, but to save yourself headaches you may want to
+move your project to a location where this is not a problem.
+C:\Users\Gabriel\AndroidstudioProjects\Alis 2.0
+                                           -   
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* Thumbs.db
+* ic_bebidas-web.png
+* ic_belleza-web.png
+* ic_carnes-web.png
+* ic_config-web.png
+* ic_congelados-web.png
+* ic_contac-web.png
+* ic_delete-web.png
+* ic_embutidos-web.png
+* ic_enviar-web.png
+* ic_farmacia-web.png
+* ic_ferreteria-web.png
+* ic_fruta-web.png
+* ic_granos-web.png
+* ic_hogar-web.png
+* ic_lacteos-web.png
+* ic_launcher-web.png
+* ic_lisg-web.png
+* ic_list2-web.png
+* ic_lista-web.png
+* ic_listg-web.png
+* ic_mas-web.png
+* ic_mas2-web.png
+* ic_minilist-web.png
+* ic_send-web.png
+* ic_send1-web.png
+* ic_send2-web.png
+* ic_send3-web.png
+* ic_sublis-web.png
+* ic_sublist-web.png
+* ic_varios-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.0.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
